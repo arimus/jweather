@@ -1,0 +1,53 @@
+Changelog
+---------
+
+Changes since 0.2.4
+	* added copyright/license text to all source files
+	* updated license to LGPL from GPL
+	* Replace URLConnection use with Apache commons-httpclient, which has
+	*   support for connection timeout configuration
+	* fixed a getVisibility() bug that was throwing an NPE
+
+Changes since 0.2.3
+	* Fixed CAVOK problem.  Was specifying 10 miles instead of 10 kilometers
+	* Support for visibility tokens like '9999' added.  Similar to CAVOK, means
+	* visibility greater than 10KM
+	* Added support for NOSIG
+	* Added support for NSC
+
+Changes since 0.2.2
+	* various bugfixes for international reporting stations
+	* - CAVOK now supported (885981)
+	* - visibility in kilometers and meters now supported (877179, 877181)
+	* - wind speed in meters/second now supported (877183)
+	* support for fractional visibilities (875903)
+	* made thread safe (875919)
+
+Changes since 0.2.1
+	* Moved all METAR-related classes into the subpackage 'metar'
+	* Split up METAR downloading and parsing
+	* Added a file that contains all METAR-related constants
+	* Added junit test file for the METAR classes (still needs work)
+	* Added fix for fractional and "less than" visibilities
+	* Miscellaneous bug fixes
+
+	* special thanks goes to Dennis Keller <dennis@bullamanka.com> for
+	  bug fixes and initiating a change in the structure of jweather that
+	  should make things more maintainable for the future.
+
+Changes since 0.2
+	* Fixed a bug regarding variable wind direction.  "VRB" is listed only
+	  in the case where the variable wind is <= 6 knots in speed.  Else, it
+	  is coded in the token immediately following in the format
+		F F F VF F F
+		  n n n  x x x
+	  Was only checking to see if the next token was variable wind
+	  direction if VRB was set, which is incorrect.
+	  
+	  Thanks to bobzilla for identifying the problem.
+
+Changes since 0.1
+	* Removed all JDK 1.4 regexp calls (e.g. matches() & split()) and
+	  replaced them with the equivalent Jakarta ORO calls
+	* Bundling ORO with jweather
+
