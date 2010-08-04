@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<document>
+  <properties>
+    <title>JWeather Project Reports</title>
+  </properties>
+  <body>
+    <section name="Project description">
+      <p>
+        Below is a list of automated project reports.
+
+          <ul>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="dependencies.html">Dependencies</a></li>
+            <li><a href="changelog-report.html">Changes</a></li>
+            <li><a href="jdepend-report.html">Metrics</a></li>
+            <li><a href="checkstyle-report.html">Checkstyle</a></li>
+            <li><a href="pmd-report.html">PMD Report</a></li>
+            <li><a href="changelog-report.html">Change Log</a></li>
+            <li><a href="file-activity-report.html">File Activity</a></li>
+            <li><a href="developer-activity-report.html">Developer Activity</a></li>
+            <li><a href="junit-report.html">Unit Tests</a></li>
+            <li><a href="javadoc.html">JavaDoc Report</a></li>
+          </ul>
+     </p>
+    </section>
+  </body>
+</document>
+
