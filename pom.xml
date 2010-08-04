@@ -54,7 +54,7 @@
 	<scm>
 		<connection>scm:svn:https://jweather.svn.sourceforge.net/svnroot/jweather</connection>
 		<url>http://jweather.svn.sourceforge.net/viewvc/jweather/</url>
-		<developerConnection>scm:cvs:ext:guusdk@jweather.cvs.sourceforge.net:/cvsroot/jweather:jweather</developerConnection>
+		<developerConnection>scm:svn:https://jweather.svn.sourceforge.net/svnroot/jweather</developerConnection>
 	</scm>
 	<issueManagement>
 		<url>http://sourceforge.net/tracker/?atid=607846&amp;group_id=94418&amp;func=browse</url>
