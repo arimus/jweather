@@ -96,8 +96,6 @@
     </dependency>
   </dependencies>
   <build>
-    <sourceDirectory>src</sourceDirectory>
-    <testSourceDirectory>src</testSourceDirectory>
     <resources>
       <resource>
         <directory>${basedir}/properties</directory>

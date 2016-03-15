@@ -37,7 +37,7 @@ import org.apache.log4j.Logger;
  * @see <a href="WeatherCondition.html">WeatherCondition</a>
  */
 public class Metar {
-	Logger log;
+	private static final Logger log = Logger.getLogger("net.sf.jweather");
 
   String reportString = null;
 	String dateString = "";
@@ -67,8 +67,7 @@ public class Metar {
 	private boolean isNoSignificantChange = false;
   private String becoming = null;
 
-	public Metar() {
-    	log = Logger.getLogger("net.sf.jweather");
+	public Metar() {    	
 		log.debug("Metar: instantiated");
 	}
 
